@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+:root {
+    --bg: #010142;
+    --light-blue: #0984ff;
+    --white: #fff;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    position: relative;
+}
+
+.sidebar {
+    position: absolute;
+    background: var(--bg);
+    color: var(--white);
+    width: 300px;
+    display: none;
+    height: 100%;
+    padding: 15px;
+    z-index: 99;
+}
+
+.sidebar.active {
+    display: block;
+}
+
+.hamburger {
+    position: fixed;
+    color: var(--white);
+    background: #000096;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 100;
+    top: 0;
+
+    font-size: 1.5rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.profile-txt {
+    background: var(--white);
+    color: var(--bg);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.profile-txt h3 {
+    font-weight: 600;
+}
+
+.profile-txt p {
+    font-size: 13px;
+}
+
+.side-list {
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-list .list {
+    width: 200px;
+}
+
+.side-list .list li {
+    margin-bottom: 10px;
+    padding: 5px;
+    transition: .3s ease;
+}
+
+.side-list .list li:hover {
+    background: var(--white);
+    color: var(--bg);
+    border-radius: 10px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+header,
+.transaction,
+.wallet,
+.report {
+    padding: 10px 50px;
+}
+
+header {
+    background: var(--bg);
+    color: #fff;
+}
+
+.head h2 {
+    text-align: center;
+    letter-spacing: 1;
+    margin-bottom: 30px;
+}
+
+.title {
+    margin-top: 40px;
+    line-height: 2;
+}
+
+.ref-link {
+    color: var(--light-blue);
+    transition: .3s ease;
+}
+
+.ref-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.transaction {
+    text-align: center;
+}
+
+.row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    padding: 20px 100px;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 4px;
+    outline: none;
+}
+
+.card:hover {
+    background: #f1f1f1;
+    opacity: .9;
+}
+
+.wallet {
+    margin: 30px 0;
+    padding-bottom: 30px;
+    background: var(--bg);
+}
+
+.wallet .row .card {
+    background: #fff;
+}
+
+.report .card {
+    margin: 0 20px;
+}
+
+.report .card>button {
+    background-color: #000096;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: .3s ease;
+    outline: none;
+}
+.report .card>button:hover{
+    opacity: .8;
+}
+
+footer{
+    background: #010142;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-style: oblique;
+    color: grey;
+}

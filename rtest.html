@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual top up services/signup</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="wrapper">
+        <div class="title"><span>Signup Form</span></div>
+        <form action="#">
+          <div class="column">
+            <div>
+                <label for="FullName">FullName:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="phone" id="phone" name="phone" required><br>
+                (e.g. 08134768901) No need of +2348134768901
+            </div>
+            <div>
+                <label for="address">Address:</label>
+                <input type="address" id="address" name="address" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <label for="confirm password">Confirm Password:</label>
+                <input type="confirm password" id="confirm password" name="confirmpassword" required>
+            </div>
+
+        </form>
+    </div>
+                       
+        <div class="row form-sub m-0">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="agree" id="agree" required>
+                    <label class="custom-control-label" for="agree"><a href="/terms">I Agree the terms and conditions.</a></label>
+                </div>
+            </div>
+         </div>
+         
+        <div>	
+            <p>	
+                <button type="submit" class="btn btn-primary  mt-3 mt-sm-0 fw-bold" onClick="this.form.submit(); this.disabled=true; this.innerText ='Authenticating.....'; ">Sign Up</button>
+            </p>
+            </div>
+        
+        
+            <div class="login-account">
+                <span class="msg">Already a member?</span>
+                <a href="{% url 'login' %}" id="show-signup" class="link">Sign In</a>
+            </div>
+        </div>
+        </form>
+    </div>
+
+
+</div>
+            

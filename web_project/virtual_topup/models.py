@@ -566,11 +566,11 @@ class Cable(models.Model):
                                 'message': message,
                                 'type': '0',
                                 'routing':route,
-                                'token':'cYTj0CCFuGM4PSrvABkoANCBNlNF2SoipZFSNlz5hmKnejg6fubGLFu7Ph2URDj22dWGYjlRqDILQz7kHxARBlAwdC4CpTKHGC5D',
+                                'token':
                                 'schedule':'',
                                     }
 
-                             baseurl = 'https://sms.hollatags.com/api/send/?user=oluwole1&pass=Pstsegunsss@c1&to={0}&from={1}&msg={2}'.format(to,sender,message)
+                             baseurl = 
                              response = requests.get(baseurl,verify=False)
                              
                              sendmessage('BILLTOKEN', "From datavilla your Bill Token is {0} ".format(

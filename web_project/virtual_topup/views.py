@@ -576,7 +576,7 @@ def activate(request, uidb64, token):
     class SignUp(SuccessMessageMixin, generic.CreateView):
        form_class = CustomUserCreationForm
        success_url = reverse_lazy('login')
-       template_name = 'signup.html'
+       template_name = 'register.html'
        success_messages = 'Please confirm your email address to complete the registration,activation link has been sent to your email, also check your email spam folder'
 
     def abc(self):
@@ -728,7 +728,7 @@ class UserEdit(generic.UpdateView):
             form._errors[forms.forms. NON_FIELD_ERRORS] = ErrorList(
                 [u'Minimun deposit is #1000'])
             return self.form_invalid(form)
-        sendmessage('Msorg', "{0} want to fund his/her account with  bank payment  amount:{1} https://www.Husmodata.com/page-not-found-error/page/vtuapp/bankpayment/".format(
+        sendmessage('Msorg', "{0} want to fund his/her account with  bank payment  amount:{1} https://www.virtualtopup.com/page-not-found-error/page/vtuapp/bankpayment/".format(
             object.user.username, object.amount), '2348166171824', '2')
 
         form.save()
@@ -786,7 +786,7 @@ class airtimeCreate(generic.CreateView):
         #         'message': message,
         #         'type': '0',
         #         'routing': route,
-        #         'token': 'cYTj0CCFuGM4PSrvABkoANCBNlNF2SoipZFSNlz5hmKnejg6fubGLFu7Ph2URDj22dWGYjlRqDILQz7kHxARBlAwdC4CpTKHGC5D',
+        #         'token': '',
         #         'schedule': '',
         #     }
 
@@ -845,7 +845,7 @@ class airtimeCreate(generic.CreateView):
         
         return super(airtimeCreate, self).form_valid(form)
     
-    class airtime_success(generic.DetailView):
+class airtime_success(generic.DetailView):
     model = Airtime
     template_name = 'Airtime_suc.html'
     queryset = Airtime.objects.all()

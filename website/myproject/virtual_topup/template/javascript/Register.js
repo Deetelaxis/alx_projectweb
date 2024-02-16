@@ -11,7 +11,7 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     if (username === 'Gloria' && email === 'gloria@gmail.com' && password === 'Gloria' && confirmPassword === 'Gloria') {
         alert('Registration successful! Welcome, Gloria.');
         // Redirect the user to another page if needed
-        window.location.href = 'Purchase.html';
+        window.location.href = 'login.html';
     } else {
         alert('Invalid registration details. Please make sure you enter the correct information.');
     }

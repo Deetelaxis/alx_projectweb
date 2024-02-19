@@ -128,7 +128,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = '/vtuapp/static/'
-AUTH_USER_MODEL = 'vtuapp.user'
+AUTH_USER_MODEL = 'vtuapp.User'
 LOGOUT_REDIRECT_URL = 'home'
 LOGIN_REDIRECT_URL = 'profile'
 LOGIN_URL= 'login'

@@ -14,7 +14,9 @@ import random
 
 User = settings.AUTH_USER_MODEL
 
-
+class User(AbstractUser):
+    # Add your custom fields here
+    pass
 
 
     # Add custom fields and methods if needed

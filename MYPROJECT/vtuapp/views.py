@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from vtuapp.models import User
+from .models import User
 from .models import *
 
 
@@ -15,6 +15,12 @@ def register(request):
 
 def login(request):
     return render(request, 'app/Login.html')
+
+def dashboard(request):
+    return render(request, 'app/dashboard.html')
+
+def purchase(request):
+    return render(request, 'app/Purchase.html')
 
 
 

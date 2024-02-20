@@ -11,7 +11,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         // Redirect the user to another page if needed
         {
         // Redirect to the specified link
-        window.location.href = 'dashboard.html';
+        window.location.href = '/dashboard';
     }
     } else {
         alert('Invalid username or password. Please try again.');

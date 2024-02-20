@@ -1,3 +1,4 @@
+{% load static %}{% load humanize %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +30,6 @@
         <input type="tel" id="phoneNumber" placeholder="Enter Phone Number (11 digits)">
         <button id="buyButton">Buy</button>
     </div>
-    <script src="Javascript/Purchase.js"></script>
+    <script src="{% static 'Javascript/Purchase.js' %}"></script>
 </body>
 </html>

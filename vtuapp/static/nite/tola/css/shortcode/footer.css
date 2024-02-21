@@ -1,0 +1,430 @@
+/* -----------------------------------
+Template:  Gethost
+
+NOTE: This is Header style file. All Header related style included in this file.
+
+--------------------------------------*/
+
+/*------------
+
+    Footer css here
+-----------*/
+.footer-top-inner.text-center>p {
+    color: #aaaaaa;
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    margin: 0 206px;
+}
+
+.f-logo {
+    margin-bottom: 23px;
+}
+
+.footer-top-inner {
+    padding-bottom: 37px;
+    position: relative;
+}
+
+.footer-top-inner:before {
+    background: #ffffff;
+    border-radius: 50%;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.single-footer-title>h3 {
+    color: #aaaaaa;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+
+.single-footer-text>p {
+    color: #aaaaaa;
+    margin-bottom: 27px;
+}
+
+.footer-social>a {
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    color: #aaaaaa;
+    display: inline-block;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+    text-align: center;
+    width: 30px;
+}
+
+.footer-social>a:first-child {
+    margin-left: 0;
+}
+
+.instagram .single-footer-desc {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.footer-social>a:hover {
+    background: #1e740c;
+    border-color: #1e740c;
+    color: #ffffff;
+}
+
+.important-link>li {
+    display: block;
+    margin-bottom: 13px;
+}
+
+.important-link>li a {
+    color: #aaaaaa;
+}
+
+.important-link>li a:hover {
+    color: #1e740c;
+}
+
+.contact .single-footer-desc p {
+    color: #aaaaaa;
+    margin-bottom: 27px;
+}
+
+.instagram-list li a {
+    display: block;
+    position: relative;
+}
+
+.instagram-list li a img {
+    border-radius: 5px;
+}
+
+.instagram-list li a:before {
+    background: rgba(245, 133, 51, 0.8);
+    border-radius: 5px;
+    content: "";
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+
+.instagram-list li:hover a:before {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.instagram-list li a:after {
+    color: #ffffff;
+    content: "";
+    font-family: Icofont;
+    font-size: 18px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.instagram-list>li {
+    float: left;
+    margin-bottom: 15px;
+    padding-right: 15px;
+    width: 33.33%;
+}
+
+.instagram-list li:hover a:after {
+    opacity: 1;
+}
+
+.f-phone,
+.f-email {
+    margin-bottom: 10px;
+}
+
+.footer-botttom {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.footer-top {
+    padding-top: 180px;
+}
+
+.footer.overlay:before {
+    background: rgba(0, 0, 0, 0.90);
+}
+
+.copyright-inner p {
+    color: #aaaaaa;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.copyright-inner p a {
+    color: #1e740c;
+    font-weight: bold;
+}
+
+.copyright-inner p a:hover {
+    text-decoration: underline;
+}
+
+.copyright-inner {
+    padding-top: 18px;
+    position: relative;
+}
+
+.copyright-inner:before {
+    background: #aaaaaa;
+    border-radius: 50%;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*Footer 1 css here*/
+
+.newsletter-title>p {
+    color: #aaaaaa;
+}
+
+.newsletter_form input {
+    background: #222222;
+    border: 1px solid #222222;
+    border-radius: 10px;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+
+.newsletter_form button {
+    background: #1e740c;
+    border: medium none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    height: 35px;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+
+.newsletter_form button:hover {
+    background: #222222;
+}
+
+/*footer style2 css here*/
+.footer-style2 .footer-botttom {
+    margin-top: 0;
+    padding-top: 180px;
+}
+
+.footer.bg-black {
+    background: #000000;
+}
+
+/*footer 3 css here*/
+footer.footer-style3 .footer-top {
+    padding-top: 50px;
+}
+
+.footer-top_inner.text-center>p {
+    color: #aaaaaa;
+}
+
+.footer-top_inner.text-center>p.phone {
+    margin-bottom: 5px;
+}
+
+.footer-style3 .footer-social {
+    margin-bottom: 30px;
+}
+
+/*footer style 4 css here*/
+
+.f-latest-single-blog .f-blog-img {
+    float: left;
+    width: 30%;
+}
+
+.f-latest-single-blog .f-blog-text {
+    float: left;
+    padding-left: 22px;
+    width: 70%;
+}
+
+.f-latest-single-blog {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.f-blog-title h5 a {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.f-blog-title h5 {
+    line-height: 12px;
+    margin: 0;
+}
+
+.f-blog-title>p {
+    color: #555555;
+    line-height: 25px;
+    margin: 10px 0 0;
+}
+
+.footer.style4 {
+    background-color: #f1f1f1;
+    background-image: none;
+}
+
+.footer.style4.style5.bg-black {
+    background-color: #000;
+}
+
+.footer.style4.overlay:before {
+    display: none;
+}
+
+.footer.style4 .important-link>li a,
+.style4 .single-footer-title>h3,
+.style4 .contact .single-footer-desc p,
+.style4 .copyright-inner p {
+    color: #555;
+}
+
+.footer.style5 .important-link>li a,
+.style5 .single-footer-title>h3,
+.style5 .contact .single-footer-desc p,
+.style5 .copyright-inner p,
+.style5 .f-blog-title>p,
+.style5 .f-blog-title h5 a,
+.footer.style6 .important-link>li a,
+.style6 .single-footer-title>h3,
+.style6 .contact .single-footer-desc p,
+.style6 .copyright-inner p,
+.style6 .f-blog-title>p,
+.style6 .f-blog-title h5 a {
+    color: #aaa;
+}
+
+.style5 .f-blog-title h5 a:hover,
+.footer.style4 .important-link>li a:hover,
+.footer.style5 .important-link>li a:hover,
+.footer.style6 .important-link>li a:hover {
+    color: #1e740c;
+}
+
+.style4 .copyright-inner::before {
+    display: none;
+}
+
+.style6.style4.overlay::before {
+    display: block;
+}
+
+.style4 .copyright-inner {
+    padding: 0;
+}
+
+.copyright {
+    padding-top: 18px;
+    position: relative;
+}
+
+.style4 .copyright:before {
+    background: #b3b3b3;
+    height: 1px;
+    width: 570px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -285px;
+    top: 0;
+    border-radius: 50%;
+}
+
+/*footer 6 css */
+.footer.footer8 .copyright-inner::before {
+    bottom: 0;
+    top: inherit;
+}
+
+.footer.footer8 .copyright-inner {
+    padding-bottom: 17px;
+    padding-top: 0;
+}
+
+.footer.footer8 .copyright-inner p {
+    margin: 0;
+}
+
+.footer.footer8 .copyright {
+    padding-top: 9px;
+    position: relative;
+}
+
+.footer-style3.footer8 .footer-social {
+    margin-bottom: 9px;
+}
+
+.footer.footer8 .f-logo {
+    margin-bottom: 35px;
+}
+
+.footer-bottom-social li {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.footer-bottom-social li:last-child {
+    margin: 0;
+}
+
+.footer-bottom-social li a {
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.footer-bottom-social li a:hover {
+    color: #1e740c;
+}
+
+.footer-bottom-social {
+    padding: 28px 0;
+}
+
+.form-messege.error {
+    color: red;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.form-messege.success {
+    color: #6bc513;
+    font-style: italic;
+    text-transform: uppercase;
+}

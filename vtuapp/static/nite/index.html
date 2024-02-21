@@ -1,0 +1,884 @@
+{% load static %}{% load humanize %}
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITENAME - Buy Airtime and Data for all Network. Make payment for DSTV, GOTV, PHCN and other services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="static//static/tola//static/tola/img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta content="WEBSITENAME- Buy Airtime and Data for all Network. Make payment for DSTV, GOTV, PHCN and other services" name="descriptison">
+
+    <meta itemprop="name" content="WEBSITENAME- Buy Airtime and Data for all Network. Make payment for DSTV, GOTV, PHCN and other services">
+    <meta itemprop="description" content="Buy Cheap Internet Data Plan and Airtime Recharge for Airtel, 9mobile, GLO, MTN, Pay DSTV, GOTV, PHCN and.">
+    <meta itemprop="image" content="static/styling/images/bg.html">
+    <link rel="stylesheet" href="static/ogbam/w3.css">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="static/styling/images/bg.html">
+    <meta name="twitter:title" content="WEBSITENAME- Buy Airtime and Data for all Network. Make payment for DSTV, GOTV, PHCN and other services">
+    <meta name="twitter:description" content="Buy Cheap Internet Data Plan and Airtime Recharge for Airtel, 9mobile, GLO, MTN, Pay DSTV, GOTV, PHCN and.">
+    <meta name="twitter:image:src" content="static/styling/images/bg.html">
+
+    <!-- Open Graph data -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="WEBSITENAME- Buy Airtime and Data for all Network. Make payment for DSTV, GOTV, PHCN and other services">
+    <meta property="og:image" content="static/styling/images/bg.html">
+    <meta property="og:description" content="Buy Cheap Internet Data Plan and Airtime Recharge for Airtel, 9mobile, GLO, MTN, Pay DSTV, GOTV, PHCN." />
+    <meta property="og:site_name" content="WEBSITENAME" />
+    <meta property="og:url" content="index.html">
+    <meta property="og:type" content="website">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Ayman Fikry" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <!-- Place favicon.ico in the root directory -->
+    <link href="/static/tola/img/apple-touch-icon.png" type="images/x-icon" rel="shortcut icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&amp;family=Lato:ital,wght@0,300;0,400;0,700;1,700&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- All css files are included here. -->
+    <link rel="stylesheet" href="/static/tola/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/tola/css/core.css">
+    <link rel="stylesheet" href="/static/tola/css/shortcode/shortcodes.css">
+    <link rel="stylesheet" href="/static/tola/css/style.css">
+    <link rel="stylesheet" href="/static/tola/css/responsive.css">
+
+    <!-- Modernizr JS -->
+    <script src="/static/tola/js/vendor/modernizr-3.5.0.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!--Header start-->
+    <header class="header">
+        
+        <!--Header bottom-->
+        <div class="header-bottom sticky-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2">
+                        <div class="logo">
+                            <a href="index.html">
+                                <h2 style="font-weight: bolder; color: white;">WEBSITENAME</h2>
+                                <!-- <img src="/static/tola/img/logo/logo.png" alt=""> -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 d-none d-lg-block position-relative">
+                        <div class="main-menu text-end">
+                            <div class="menu me">
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html">home</a>
+                                        </li>
+                                        <li><a href="#service">Services</a></li>
+                                        <li><a href="#feature">Features</a></li>
+                                        <li><a href="#about">About</a>
+                                        </li>
+                                        <li><a href="#pricing">Pricing</a>
+                                        </li>
+                                        {% if user.is_authenticated %}
+                                        <li><a href="/profile">Dashboard</a></li>
+                                        <li><a href="/logout">logout</a></li>
+                                        {% else %}
+                                        <li><a href="/signup">Register</a></li>
+                                        <li><a href="/login">login</a></li>
+                                {% endif %}
+                                    </ul>
+                                </nav>
+                                <div style="color: #1e740c;" class="menu-toggle hamburger hamburger--squeeze hidden-sm hidden-xs">
+                                    <div class="hamburger-box">
+                                        <!-- <div class="hamburger-inner"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile menu start -->
+            <div class="mobile-menu-area d-block d-lg-none">
+                <div class="container">
+                    <div class="col-12">
+                        <nav id="dropdown">
+                            <ul>
+                                <li><a href="index.html">home</a>
+                                </li>
+                                <li><a href="#service">Services</a></li>
+                                <li><a href="#feature">Features</a></li>
+                                <li><a href="#about">About</a>
+                                </li>
+                                <li><a href="#pricing">Pricing</a>
+                                </li>
+                                {% if user.is_authenticated %}
+                                <li><a href="/profile">Dashboard</a></li>
+                                <li><a href="/logout">logout</a></li>
+                                {% else %}
+                                <li><a href="/signup">Register</a></li>
+                                <li><a href="/login">login</a></li>
+                                {% endif %}
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile menu end -->
+        </div>
+        <!--Header bottom end-->
+    </header>
+    <!--Header end-->
+    <!--slider area-->
+    <div class="slider">
+        <div class="slider-list">
+            <div class="single-slide" style="background-image: url(/static/tola/img/shi.jpg);">
+                <div class="slider-text">
+                    <h1 style="font-size: 70px;">WELCOME TO <br><span>{{config.intro_message}}</span></h1>
+                    <p style="color: white;">{{config.intro_message_content}}</p>
+                    {% if user.is_authenticated %}
+                    <a href="/profile">Dashboard</a>
+                    <a href="/logout">logout</a>
+                    {% else %}
+                    <a href="/signup">Register</a>
+                    <a href="/login">login</a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="single-slide" style="background-image: url(/static/tola/img/sm.jpg);">
+                <div class="slider-text">
+                    <h1 style="font-size: 70px;">WELCOME TO <br><span>{{config.intro_message}}</span></h1>
+                    <p style="color: white;">We offer the best services to all our users.</p>
+                    {% if user.is_authenticated %}
+                    <a href="/profile">Dashboard</a>
+                    <a href="/logout">logout</a>
+                    {% else %}
+                    <a href="/signup">Register</a>
+                    <a href="/login">login</a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="single-slide" style="background-image: url(/static/tola/img/op.jpg);">
+                <div class="slider-text">
+                    <h1 style="font-size: 70px;">Get online 24/7 and stay connected</span></h1>
+                    {% if user.is_authenticated %}
+                    <a href="/profile">Dashboard</a>
+                    <a href="/logout">logout</a>
+                    {% else %}
+                    <a href="/signup">Register</a>
+                    <a href="/login">login</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--slider area end-->
+
+ <!--choose get host-->
+ <div class="choose-gethost" id="feature">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title text-center">
+                    <h2>WE OFFER THE BEST FEATURES</h2>
+                    <p>We Offer The Best  Features To All Our Users.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-3 col-md-4">
+                <div class="choose-gethos-list left text-end">
+                    <div class="single-choose-gethost">
+                        <h3>Instant Delivery</h3>
+                        <p>Fast service delivery is at the core of our deliverable - instant purchase of Airtime, Databundles, CableTV subscription (DStv, GOtv & Startimes) and lots more.</p>
+                    </div>
+                    <div class="single-choose-gethost">
+                        <h3>Reliability</h3>
+                        <p>We understand how valuable connections are to our users. to this end, all our deliverables are optimized to be secured, super fast, and at your comfort.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-4">
+                <div class="gethost-choose-img text-center">
+                    <img src="/static/tola/img/ez.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="choose-gethos-list right text-start">
+                    <div class="single-choose-gethost">
+                        <h3>Good Customer Support</h3>
+                        <p>We value our users, which is why we offer a comprehensive and dedicated support. Our customer support are online 24/7 to help you resolve any issue.</p>
+                    </div>
+                    <div class="single-choose-gethost">
+                        <h3>Affordability</h3>
+                        <p>We offer instant and seamless recharge of Airtime, Databundle, CableTV (DStv, GOtv & Startimes), Electricity Bill Payment at amazing discounted prices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--choose get host end-->
+
+     <!--services area-->
+     <div class="services-area overlay" id="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2>Our services</h2>
+                        <p>We Provide Instant Delivery Of All Our Services To All Our Users.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="services-promos">
+                        <div class="row g-0">
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="single-services">
+                                    <div class="services-icon">
+                                        <img src="/static/tola/img/dta.png">
+                                    </div>
+                                    <h2>Buy Data</h2>
+                                    <p>Start enjoying this very low rates Data plan for your internet browsing databundle</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="single-services">
+                                    <div class="services-icon">
+                                        <img src="/static/tola/img/smart-tv.png">
+                                    </div>
+                                    <h2>Cable Subscription</h2>
+                                    <p>Instantly Activate Cable subscription with favourable discount compare to others.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="single-services">
+                                    <div class="services-icon">
+                                        <img src="/static/tola/img/telephone.png">
+                                    </div>
+                                    <h2>Airtime Topup</h2>
+                                    <p>Making an online recharge has become very easy and safe on WEBSITENAME.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="single-services">
+                                    <div class="services-icon">
+                                        <img src="/static/tola/img/blk.png">
+                                    </div>
+                                    <h2>Bulk SMS</h2>
+                                    <p>Send Bulk SMS to any number for as low as just 2.5kobo per unit.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="single-services">
+                                    <div class="services-icon">
+                                        <img src="/static/tola/img/lightbulb.png">
+                                    </div>
+                                    <h2>Utility Payment</h2>
+                                    <p>Because we understand your needs, we have made bills and utilities payment more convenient.</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--services area end-->
+
+<!--choose get host-->
+<div class="choose-gethost" id="about" style="background-color: #1e740c;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title text-center">
+                    <h2 style="color: white;">ABOUT US</h2>
+                    <p style="color: white;">WE ARE YOUR ONE STOP SUBSCRIPTION DESTINATION</p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-4">
+                <div class="choose-gethos-list left text-center">
+                    <div class="single-choose-">
+                        <p style="color: white;">{{config.about_website}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-4">
+                <div class="gethost-choose-img text-center">
+                    <img src="/static/tola/img/pol.webp" style="border: dashed 2px white;" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!--choose get host end-->
+
+
+   
+   
+   
+
+<!--our blog start-->
+<div class="our-blog ptb-90">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                 <div class="section-title text-center">
+                    <h2>amazing offer</h2>
+                    <p>Enjoy all our services at the comfort of your zone.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="single-blog">
+                    <div class="blog-thumbnail">
+                        <a href="#"><img src="/static/tola/img/ik.jpg" alt=""></a>
+                    </div>
+                    
+                    <div class="blog-desc">
+                        <div class="post-title">
+                            <h3>Create An Affiliate Website</h3>
+                        </div>
+                        <div class="post-content">
+                            <p>We offer a very affordable rate for a VTU website. For more information, please contact us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="single-blog post-video">
+                    <div class="blog-thumbnail">
+               <img src="/static/tola/img/pal.jpg" alt="">
+                    </div>
+                   
+                    <div class="blog-desc">
+                        <div class="post-title">
+                            <h3>Become An Agent</h3>
+                        </div>
+                        <div class="post-content">
+                            <p>Earn a commission for every transaction you perform for your customers using WEBSITENAME's easy-payments solution.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="single-blog">
+                    <div class="blog-thumbnail">
+                        <a href="#"><img src="/static/tola/img/abto.jpg" alt=""></a>
+                    </div>
+                    <div class="blog-desc">
+                        <div class="post-title">
+                            <h3>Take advantage of Awoof discounts</h3>
+                        </div>
+                        <div class="post-content">
+                            <p>When you open an account with us, you will receive massive discounts on all of our products and services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--our blog end-->
+
+ <!--Fun fact area start-->
+ <div class="fun-fact text-center overlay">
+    <div class="container">
+        <div class="row mb-n35">
+            <div class="col-lg-3 col-md-6 col-12 mb-35">
+                <div class="single-fun-fact">
+                    <div class="fun-icon">
+                        <a href="#"><i class="icofont icofont-user-suited"></i></a>
+                    </div>
+                    <p><span class="counter">2500</span>+</p>
+                    <h3>Active Clients</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-35">
+                <div class="single-fun-fact">
+                    <div class="fun-icon">
+                        <a href="#"><i class="icofont icofont-calendar"></i></a>
+                    </div>
+                    <p><span class="counter">3</span></p>
+                    <h3>Years Of Experience</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-35">
+                <div class="single-fun-fact">
+                    <div class="fun-icon">
+                        <a href="#"><i class="icofont icofont-plus"></i></a>
+                    </div>
+                    <p><span class="counter">100</span>%</p>
+                    <h3>Client Satisfaction</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-35">
+                <div class="single-fun-fact">
+                    <div class="fun-icon">
+                        <a href="#"><i class="icofont icofont-rocket"></i></a>
+                    </div>
+                    <p><span class="counter">100</span>%</p>
+                    <h3>Fast & Reliable</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Fun fact area end-->
+
+    <!--pricing palaning start-->
+    <div class="pricing-plan ptb-90" id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2>YOUR PRICING TABLE</h2>
+                        <p>Mirum est notare quam littera gIt is a long established fact that a reader will be distracted
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-n35">
+                <div class="col-lg-3 col-md-6 col-12 mb-35">
+                    <div class="pricing-table text-center">
+                        <div class="pricing-title">
+                            <h3>MTN PLAN</h3>
+                        </div>
+                        <div class="pricing-desc">
+                            <div class="pricing-desc-title">
+                               <img style="height: 80px;" src="/static/tola/img/mtn1.jpeg">
+                            </div>
+                            <table class="table table-all table-responsive table-stripped">
+                        
+                                <tbody>
+                                    {% for plans in plan %}
+                                    <tr>
+                                    <td style="color: black; font-size:16px; font-weight: bolder;"> {{plans.plan_size}}{{plans.plan_Volume}} </td>
+                                    <td style="color: black; font-size:16px;  font-weight: bolder;"><i> &#8358;{{plans.plan_amount}}</i></td>
+                                    <td style="color: black; font-size:12px;  font-weight: bolder;"><i>{{plans.month_validate}}</i></td>
+                                    </tr>
+        {% endfor %}			
+                              </tbody></table>
+                            <div class="buy-now">
+                                <a href="/profile">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-35">
+                    <div class="pricing-table text-center">
+                        <div class="pricing-title">
+                            <h3>AIRTEL PLAN</h3>
+                        </div>
+                        <div class="pricing-desc">
+                            <div class="pricing-desc-title">
+                                <img style="height: 80px;" src="/static/tola/img/airtel.png">
+                            </div>
+                            <table class="table table-all table-responsive table-stripped">
+                                
+
+                                
+                                <tbody>{% for plans in plan_4 %}
+                                    <tr>
+                                    <td style="color: black; font-size:16px; font-weight: bolder;"> {{plans.plan_size}}{{plans.plan_Volume}} </td>
+                                    <td style="color: black; font-size:16px;  font-weight: bolder;"><i> &#8358;{{plans.plan_amount}}</i></td>
+                                    <td style="color: black; font-size:12px;  font-weight: bolder;"><i>{{plans.month_validate}}</i></td>
+                                    </tr>
+                                {% endfor %}
+                                  
+                                </tbody></table>
+                            <div class="buy-now">
+                                <a href="/profile">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-35">
+                    <div class="pricing-table text-center">
+                        <div class="pricing-title">
+                            <h3>GLO PLAN</h3>
+                        </div>
+                        <div class="pricing-desc">
+                            <div class="pricing-desc-title">
+                                <img style="height: 80px;" src="/static/tola/img/glo.jpg">
+                            </div>
+                            <table class="table table-all table-responsive table-stripped">
+                                
+                                <tbody>{% for plans in plan_2 %}
+                                <tr>
+                                <td style="color: black; font-size:16px; font-weight: bolder;"> {{plans.plan_size}}{{plans.plan_Volume}} </td>
+                                <td style="color: black; font-size:16px;  font-weight: bolder;"><i> &#8358;{{plans.plan_amount}}</i></td>
+                                <td style="color: black; font-size:12px;  font-weight: bolder;"><i>{{plans.month_validate}}</i></td>
+                                </tr>
+                            {% endfor %}</tbody></table>
+                            <div class="buy-now">
+                                <a href="/profile">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-35">
+                    <div class="pricing-table text-center">
+                        <div class="pricing-title">
+                            <h3>9MOBILE PLAN</h3>
+                        </div>
+                        <div class="pricing-desc">
+                            <div class="pricing-desc-title">
+                                <img style="height: 80px;" src="/static/tola/img/9mobile.png">
+                            </div>
+                            <table><tbody>{% for plans in plan_3 %}
+                                <tr>
+                                <td style="color: blackwhite; font-size:16px; font-weight: bolder;"> {{plans.plan_size}}{{plans.plan_Volume}} </td>
+                                <td style="color: black; font-size:16px;  font-weight: bolder;"><i> &#8358;{{plans.plan_amount}}</i></td>
+                                <td style="color: black; font-size:12px;  font-weight: bolder;"><i>{{plans.month_validate}}</i></td>
+                                </tr>
+                            {% endfor %}
+                            </tbody></table>
+                            <div class="buy-now">
+                                <a href="/profile">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--pricing palaning end-->
+
+    <!--testimonial start-->
+    <div class="testimonial overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="testimonial-list">
+                            <div class="single-testimonial">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="single-testimonial-inner text-end">
+                                            <div class="single-testimonial-top">
+                                                <div class="testimonial-text">
+                                                    <div class="testimonial-title">
+                                                        <p>Top User <span>-</span></p>
+                                                    </div>
+                                                    <div class="testimonial-name">
+                                                        <h5>Olalekan Afolabi</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial-img">
+                                                    <img src="/static/tola/img/fs.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="single-testimonial-bottom">
+                                                <p>WEBSITENAME is one of my most trusted sources for airtime and data subscriptions.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="single-testimonial-inner text-start">
+                                            <div class="single-testimonial-top">
+                                                <div class="testimonial-img">
+                                                    <img src="/static/tola/img/fq.png" alt="">
+                                                </div>
+                                                <div class="testimonial-text">
+                                                    <div class="testimonial-name">
+                                                        <h5>Aishat Idris</h5>
+                                                    </div>
+                                                    <div class="testimonial-title">
+                                                        <p>Enterpreneur <span>-</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-testimonial-bottom">
+                                                <p>I have been able to subscribe online more easily thanks to WEBSITENAME.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-testimonial">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="single-testimonial-inner text-end">
+                                            <div class="single-testimonial-top">
+                                                <div class="testimonial-text">
+                                                    <div class="testimonial-title">
+                                                        <p>Student<span>-</span></p>
+                                                    </div>
+                                                    <div class="testimonial-name">
+                                                        <h5>Joel Adedapo</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial-img">
+                                                    <img src="/static/tola/img/fs.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="single-testimonial-bottom">
+                                                <p>As a Student, I need a constant & affordable  data service. With WEBSITENAME, I've been enjoying  cheap and consistent data services. I would recommend this company to any one working online or in need of constant data.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--testimonial end-->
+
+
+
+    <!--our brand start-->
+    <div class="our-brand overlay ptb-60">
+        <div class="container">
+            <div class="brand-list">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="single-brand">
+                            <div class="brand-top b-logo">
+                                <img src="/static/tola/img/mtn1.jpeg" style="height: 70px;" alt="">
+                            </div>
+                            <div class="brand-bottom b-logo">
+                                <img src="/static/tola/img/airtel.png" style="height: 70px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="single-brand">
+                            <div class="brand-top b-logo">
+                                <img src="/static/tola/img/glo.jpg" style="height: 70px;" alt="">
+                            </div>
+                            <div class="brand-bottom b-logo">
+                                <img src="/static/tola/img/9mobile.png" style="height: 70px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="single-brand">
+                            <div class="brand-top b-logo">
+                                <img src="/static/tola/img/dstv.png" style="height: 70px;" alt="">
+                            </div>
+                            <div class="brand-bottom b-logo">
+                                <img src="/static/tola/img/ibedc.png" style="height: 70px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 d-block d-md-none d-lg-block">
+                        <div class="single-brand">
+                            <div class="brand-top b-logo">
+                            <img src="/static/tola/img/eko.png" style="height: 70px;" alt="">
+                            </div>
+                            <div class="brand-bottom b-logo">
+                                <img src="/static/tola/img/startime.png" style="height: 70px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--our brand end-->
+    <!--faq area start-->
+    <div class="faq-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2>Faq</h2>
+                        <p>Mirum est notare quam littera gIt is a long established fact that a reader will be distracted
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-10 mx-auto">
+                    <div class="faq-area-inner">
+                        <div class="faq-accordion">
+                            <!--panel body start-->
+                            <h4>How To Buy Data?</h4>
+                            <div class="faq-description">
+                                <p>1. Log in to your account <br> 2. If not click here to register <br> 3. After log in click fund my account <br> 4. Select Coupon payment
+                                </p>
+                            </div>
+                            <!--panel body end-->
+                            <!--panel body start-->
+                            <h4 class="open">What Are The Codes For Checking Data Balance?</h4>
+                            <div class="faq-description">
+                                <p>MTN-&gt; *461*4#
+                                    <br> 9mobile[SME]-&gt; *229*9#
+                                    <br> 9mobile[Gifting]-&gt; *228#
+                                    <br> Airtel-&gt; *140#
+                                    <br> Glo-&gt; *127*0#. </p>
+                            </div>
+                            <!--panel body end-->
+                            <!--panel body start-->
+                            <h4>How Do I Fund My Wallet?</h4>
+                            <div class="faq-description">
+                                <p>You can fund your wallet using any of our Four payment means: Bank payment.
+                                    <br> Online Payment with your ATM card details via Pay stack Payment Gateway.
+                                    <br> Payment with airtime.
+                                    <br> Payment with Coupon Code(s). </p>
+                            </div>
+                            <!--panel body end-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="faq-img">
+                        <img src="/static/tola/img/o.jpg" style="border: dashed 3px #1e740c;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--faq area end-->
+    <!--Newsletter start-->
+    <div class="newsletter text-center fix">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="newsletter-inner " style="background-color: #1e740c!important;">
+                        <div class="newsletter-head">
+                            <p>Integrate our API</p>
+                            <h5>Integrate our powerful and well-documented API to earn handsome profits from serving hundreds of customers.</h5>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Newsletter end-->
+    <!--Footer start-->
+    <footer class="footer overlay">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="footer-top-inner text-center">
+                            <div class="f-logo">
+                                <h2 style="color: white;">WEBSITENAME</h2>
+                                <!-- <a href="#"><img src="/static/tola/img/logo/logo-2.png" alt=""></a> -->
+                            </div>
+                            <p>{{config.intro_message_content}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-botttom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-footer links">
+                            <div class="single-footer-title">
+                                <h3>OUR services</h3>
+                            </div>
+                            <div class="single-footer-desc">
+                                <ul class="important-link">
+                                    <li><a href="#service">Buy Data</a></li>
+                                    <li><a href="#service">Airtime Recharge</a></li>
+                                    <li><a href="#service">Bulk SMS</a></li>
+                                    <li><a href="#service">Cable Subscription</a></li>
+                                    <li><a href="#service">Utility Payment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-footer links">
+                            <div class="single-footer-title">
+                                <h3>IMPORTANT LINKS</h3>
+                            </div>
+                            <div class="single-footer-desc">
+                                <ul class="important-link">
+                                    <li><a href="#service">Our Services</a></li>
+                                    <li><a href="#about">About Us</a></li>
+                                    <li><a href="#feature">Features</a></li>
+                                    <li><a href="#pricing">Pricing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-footer contact">
+                            <div class="single-footer-title">
+                                <h3>Quick contact</h3>
+                            </div>
+                            <div class="single-footer-desc">
+                                <div class="f-phone">
+                                    <p>{{config.phone_number}}</p>
+                                </div>
+                                <div class="f-email">
+                                    <p>{{config.support_mail}}</p>
+                                </div>
+                                <div class="f-house-no">
+                                    <p>{{config.address}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 mx-auto">
+                        <div class="copyright-inner text-center">
+                            <p>&copy; 2023 <b class="text-white">WEBSITENAME</b> Developed by: <a
+                                    href="https://msorgdevelopers.com/"><b>MSORG DEVELOPERS</b></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer end-->
+
+
+    <!-- Placed js at the end of the document so the pages load faster -->
+
+    <!-- All jquery file included here -->
+    <script src="/static/tola/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/static/tola/js/bootstrap.min.js"></script>
+    <script src="/static/tola/js/slick.min.js"></script>
+    <script src="/static/tola/js/waypoints.min.js"></script>
+    <script src="/static/tola/js/jquery.counterup.min.js"></script>
+    <script src="/static/tola/js/ajax-mail.js"></script>
+    <script src="/static/tola/js/owl.carousel.min.js"></script>
+    <script src="/static/tola/js/isotope.pkgd.min.js"></script>
+    <script src="/static/tola/js/jquery.magnific-popup.js"></script>
+    <script src="/static/tola/js/plugins.js"></script>
+    <script src="/static/tola/js/main.js"></script>
+
+</body>
+
+
+
+</html>

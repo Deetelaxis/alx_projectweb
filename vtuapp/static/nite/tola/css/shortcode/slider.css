@@ -1,0 +1,109 @@
+/* -----------------------------------
+Template:  Gethost
+
+NOTE: This is Header style file. All Header related style included in this file.
+
+--------------------------------------*/
+
+/*---------------------
+    Default home Slider css here
+-----------------------*/
+.slider {
+    position: relative;
+}
+
+.single-slide {
+    position: relative;
+}
+
+.single-slide:before {
+    background: rgba(0, 0, 0, 0.65);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.single-slide {
+    background-position: center center;
+    background-size: cover;
+    height: 765px;
+}
+
+
+.slider-text {
+    margin-top: 5px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.slider-text h1 {
+    color: #ffffff;
+    font-size: 130px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.slider-text h1 span {
+    color: #1e740c;
+}
+
+.slider-text h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 53px;
+    text-transform: capitalize;
+}
+
+.slider-text>a {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    height: 42px;
+    line-height: 40px;
+    padding: 0 32px;
+    text-transform: uppercase;
+}
+
+.slider-text>a:hover {
+    background: #1e740c;
+    border-color: #1e740c;
+}
+
+.slider-list.owl-carousel .owl-buttons>div {
+    background: rgba(0, 0, 0, 0);
+    border: medium none;
+    font-size: 48px;
+    height: inherit;
+    left: 148px;
+    line-height: 25px;
+    margin: 0;
+    opacity: 1;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    width: inherit;
+    color: #1e740c;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.slider-list.owl-carousel .owl-buttons>div:hover {
+    color: #fff;
+}
+
+.slider-list.owl-carousel .owl-controls {
+    margin: 0;
+}
+
+.slider-list.owl-carousel .owl-buttons .owl-next {
+    left: auto;
+    right: 148px;
+}

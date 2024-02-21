@@ -1,0 +1,422 @@
+/* -----------------------------------
+Template:  Gethost
+
+NOTE: This is Header style file. All Header related style included in this file.
+
+--------------------------------------*/
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.menu-js nav {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu nav {
+  display: inline-block;
+}
+
+.menu-js nav.menu-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-top {
+  border-bottom: 1px solid #555555;
+}
+
+.header-left ul li {
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 25px;
+}
+
+.header-left li a {
+  color: #ffffff;
+}
+
+.header-left li a:hover {
+  color: #1e740c;
+}
+
+.header-left li i {
+  margin-right: 10px;
+}
+
+.header-left ul li:first-child {
+  margin-left: 0;
+}
+
+.header-right ul li {
+  display: inline-block;
+  padding: 15px 0;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.header-left {
+  padding: 16px 0;
+}
+
+.header-right ul li a {
+  border-right: 1px solid #ffffff;
+  padding-left: 11px;
+  padding-right: 15px;
+  color: #ffffff;
+}
+
+.header-right ul li:last-child a {
+  border-right: none;
+}
+
+.header-right ul li a:hover {
+  color: #1e740c
+}
+
+.header-right ul li.currency {
+  text-transform: uppercase;
+}
+
+.header-right ul li.cart i {
+  font-size: 18px;
+}
+
+.header-right ul li:last-child {
+  border: medium none;
+}
+
+.header-right ul li:last-child a {
+  padding-right: 0;
+}
+
+.header-right li.currency a::after {
+  content: "";
+  font-family: IcoFont;
+  padding-left: 6px;
+  color: #fff;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.header-right li.currency ul {
+  border-color: none;
+  background: #ffffff;
+  border-color: #ffffff #ffffff;
+  border-image: none;
+  border-style: none solid solid;
+  border-width: medium 1px 1px;
+  left: -3px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  position: absolute;
+  top: 100%;
+  width: 71px;
+  z-index: 999;
+  opacity: 0;
+  transition: .3s;
+  margin-top: 15px;
+  visibility: hidden;
+}
+
+.header-right li.currency:hover ul {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+}
+
+.header-right li.currency ul li a:hover {
+  color: #1e740c;
+}
+
+.header-right li.currency ul li:last-child {
+  padding: 0;
+}
+
+.header-right li.currency ul li {
+  display: block;
+  margin: 5px 0;
+  padding: 0;
+}
+
+.header-right li.currency ul li a {
+  color: #555555;
+  border: none;
+}
+
+.header-right li.currency ul li:last-child {
+  margin: 0;
+}
+
+.header-right li.currency ul li:first-child {
+  margin: 0;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: #ffffff;
+  border-radius: 0;
+  height: 2px;
+  width: 30px;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-left: 53px;
+  position: relative;
+}
+
+.menu ul li a {
+  color: #ffffff;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 44px 0;
+  text-transform: uppercase;
+}
+
+.hamburger {
+  line-height: 11px;
+  padding: 0;
+  position: absolute;
+  right: 5px;
+  top: 44px;
+}
+
+.hamburger--spring .hamburger-inner::before {
+  top: 9px;
+}
+
+.hamburger--spring .hamburger-inner::after {
+  top: 17px;
+}
+
+.menu nav.menu-open {
+  margin-right: 50px;
+  transition: all 0.5s ease 0s;
+}
+
+.logo {
+  margin-top: 30px;
+}
+
+.home2 .menu ul li a {
+  padding: 41px 0;
+}
+
+/*------------
+    Navigation css here
+--------------------*/
+.menu ul li .dropdown_menu {
+  background: #ffffff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  transform: translateY(15px);
+  transition: all 0.5s ease 0s;
+  visibility: hidden;
+  width: 220px;
+  z-index: 99;
+}
+
+.menu ul li:hover .dropdown_menu,
+.menu ul li .dropdown_menu li:hover ul.dropdown-submenu {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.menu ul li .dropdown_menu li a {
+  color: #555555;
+  font-family: "Dosis", sans-serif;
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+.menu ul li .dropdown_menu li {
+  border-bottom: 1px solid #f1f1f1;
+  display: block;
+  margin: 0;
+  padding: 12px 0;
+  text-align: left;
+  position: relative;
+}
+
+.menu ul li .dropdown_menu li:last-child {
+  border: medium none;
+}
+
+.menu ul li:hover a,
+.menu ul li:hover ul li a:hover,
+.menu ul li .dropdown_menu li:hover a,
+.menu ul li .dropdown_menu li:hover li a:hover,
+.header-style6 .menu ul li:hover a,
+.header-style6 .menu ul li:hover ul li a:hover,
+.header.header-style3 .menu ul li:hover a,
+.header.header-style3 .menu ul li:hover li a:hover {
+  color: #1e740c;
+}
+
+.menu ul li:hover ul li a,
+.menu ul li .dropdown_menu li:hover li a,
+.header-style6 .menu ul li:hover ul li a,
+.header.header-style3 .menu ul li:hover li a {
+  color: #555;
+}
+
+.menu ul li .dropdown_menu li ul.dropdown-submenu {
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  left: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transform: translateY(10px);
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menu ul li .dropdown_menu li.dropdown_submenu_inner::before {
+  content: "";
+  font-family: Icofont;
+  font-size: 18px;
+  position: absolute;
+  right: 12px;
+}
+
+/*header style 2*/
+.header-style2 .header-rigt-desc {
+  float: none;
+  position: relative;
+}
+
+.header-style2 .header-right {
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.home2.header-style2 .main-menu {
+  margin-left: 272px;
+  margin-right: 0;
+}
+
+.header-style2 .header-right li:nth-child(2) {
+  padding-left: 10px;
+}
+
+.header-right li.currency ul li:nth-child(2) {
+  padding-left: 0;
+}
+
+/*--Header sytyle 3----*/
+.header.header-style3 {
+  position: inherit;
+}
+
+.header.header-style3 .menu ul li a {
+  color: #555555;
+}
+
+.breadcrumbs.header-3 {
+  padding: 165px 0;
+}
+
+.header-style3 .menu ul li a {
+  padding: 38px 0;
+}
+
+.header-bg .header-right ul li a:hover {
+  color: #555555;
+}
+
+.header-right ul li.chat i {
+  margin-right: 10px;
+}
+
+.header-style3 .header-right ul li:nth-child(2) {
+  padding-left: 10px;
+}
+
+.header-social li {
+  display: inline-block;
+  margin-right: 22px;
+  padding: 13px 0;
+}
+
+.header-social li a {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.header-social li a:hover {
+  color: #555555;
+}
+
+/*--header style 4--*/
+.header-style4 .header-top {
+  border-bottom: medium none;
+  border-top: 1px solid #555555;
+}
+
+.header-style4 .menu ul li a {
+  padding: 40px 0;
+}
+
+.header-style4 .main-menu.text-end {
+  text-align: center;
+}
+
+.menu ul li.another_logo {
+  padding: 0 52px;
+}
+
+.header-style4 .menu ul li a {
+  padding: 40px 0;
+}
+
+.header-style4 .menu ul li.another_logo a {
+  padding: 0;
+}
+
+/*header style 5*/
+.header-style5 .menu ul li a {
+  padding: 40px 0;
+}
+
+/*Header style 6*/
+.header.header-style6 {
+  position: inherit;
+}
+
+.header.header-style6 .header-bottom {
+  background: #f9f9f9;
+}
+
+.header-top.header-grey {
+  background: #666666;
+}
+
+.header-style6 .hamburger-inner,
+.header-style6 .hamburger-inner::before,
+.header-style6 .hamburger-inner::after {
+  background-color: #555555;
+}
+
+.header-style6 .menu ul li a {
+  color: #555555;
+}
+
+.header1 .header-right ul li:last-child a {
+  padding-right: 0;
+}

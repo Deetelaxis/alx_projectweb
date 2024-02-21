@@ -1,0 +1,130 @@
+{% load static %}
+ {% load humanize %} {% load crispy_forms_tags %}
+{% if user.is_authenticated %}
+
+<script>
+    window.location = "{%url 'profile' %}";
+</script>
+
+
+{% endif %}
+<!DOCTYPE html> 
+<html lang="en">   
+                            
+<head>
+	<title>Signup - {{config.website_domain}} | Buy Data, Airtime to cash, Bills Payment</title>
+    
+    
+	<!-- favicons -->
+	
+
+	<link rel="icon" type="image/png" href="/static/Dydiamondconcept/assets/img/favicon.png">
+	
+  	<link rel="stylesheet" href="{% static 'ogbam/w3.css' %}">
+
+    
+    <!--favicon icon-->
+	<link rel="icon" href="/static/assets_phe/img/favicon.png" type="image/png" sizes="16x16">
+
+	
+	<link rel="icon" href="/static/dashboard/assets/img/icon.ico" type="image/x-icon"/>
+
+	<!-- Fonts and icons -->
+	<script src="/static/dashboard/assets/js/plugin/webfont/webfont.min.js"></script>
+ 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+  
+	
+	<script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['/static/dashboard/assets/css/fonts.min.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+	
+	<script>
+	toastr.error('Error','Error Title')
+
+</script>
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="/static/dashboard/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/dashboard/assets/css/atlantis.css">
+	
+
+	
+</head>
+<body class="login" >
+<style>
+    .wrapper {
+      background: url("https://www.crushpixel.com/big-static9/preview4/portrait-young-black-woman-creative-281986.jpg");
+      background-size: cover;
+      box-shadow: inset 2000px 1000px 2000px rgb(5 5 174);
+    }
+
+    button,
+    .btn-primary,
+    .btn,
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:disabled {
+      background: linear-gradient(162deg, orange, #ff9400) !important;
+      border: none !important;
+    }
+  </style>
+  
+	<div class="wrapper wrapper-login">
+	
+		<div class="container container-login animated fadeIn">
+		   {% if form.non_field_errors %} {% for errormessage in form.non_field_errors %}
+
+             <div style=' background-color:red;padding:20px;color:white;'>
+                 {{errormessage}}</div>
+             {% endfor %} {% endif %}
+
+			
+			<h3 class="text-center">Register</h3>
+			 <form method="POST" >
+                    {% csrf_token %}
+			 <div class="form-group">
+                        {% for field in form %}
+                        {{field|as_crispy_field}} 
+
+            {% endfor %}   
+    <!--        <div class="row form-sub m-0">-->
+				<!--	<div class="custom-control custom-checkbox">-->
+				<!--		<input type="checkbox" class="custom-control-input" name="agree" id="agree" required>-->
+				<!--		<label class="custom-control-label" for="agree"><a href="/terms">I Agree the terms and conditions.</a></label>-->
+				<!--	</div>-->
+				<!--</div>-->
+			
+<div class="form-group form-action-d-flex mb-3">
+				
+					
+					<button type="submit" class="btn btn-primary  mt-3 mt-sm-0 fw-bold" onClick="this.form.submit(); this.disabled=true; this.innerText ='Authenticating.....'; ">Sign Up</button>
+				</div>
+			
+			
+				<div class="login-account">
+					<span class="msg">Already a member?</span>
+					<a href="{% url 'login' %}" id="show-signup" class="link">Sign In</a>
+				</div>
+			</div>
+			</form>
+		</div>
+
+	
+	</div>
+	<script src="/static/dashboard/assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="/static/dashboard/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="/static/dashboard/assets/js/core/popper.min.js"></script>
+	<script src="/static/dashboard/assets/js/core/bootstrap.min.js"></script>
+	<script src="/static/dashboard/assets/js/atlantis.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+
+
+</body>
+</html>

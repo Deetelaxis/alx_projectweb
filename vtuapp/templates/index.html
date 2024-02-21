@@ -1,0 +1,309 @@
+{% load static %}{% load humanize %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alxproject - Buy Airtime and Data for all Network. Make payment for DSTV, GOTV, PHCN and other services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="static/img/ms-icon-144x144.html">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta content="Alxproject - Buy Airtime and Data for all Network. Make payment for DSTV, GOTV, PHCN and other services" name="descriptison">
+
+    <meta itemprop="name" content="Alxproject - Buy Airtime and Data for all Network. Make payment for DSTV, GOTV, PHCN and other services">
+    <meta itemprop="description" content="Buy Cheap Internet Data Plan and Airtime Recharge for Airtel, 9mobile, GLO, MTN, Pay DSTV, GOTV, PHCN and.">
+    <meta itemprop="image" content="static/styling/images/bg.html">
+    <link rel="stylesheet" href="static/ogbam/w3.css">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="static/styling/images/bg.html">
+    <meta name="twitter:title" content="Alxproject - Buy Airtime and Data for all Network. Make payment for DSTV, GOTV, PHCN and other services">
+    <meta name="twitter:description" content="Buy Cheap Internet Data Plan and Airtime Recharge for Airtel, 9mobile, GLO, MTN, Pay DSTV, GOTV, PHCN and.">
+    <meta name="twitter:image:src" content="static/styling/images/bg.html">
+
+    <!-- Open Graph data -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Alxproject - Buy Airtime and Data for all Network. Make payment for DSTV, GOTV, PHCN and other services">
+    <meta property="og:image" content="static/styling/images/bg.html">
+    <meta property="og:description" content="Buy Cheap Internet Data Plan and Airtime Recharge for Airtel, 9mobile, GLO, MTN, Pay DSTV, GOTV, PHCN." />
+    <meta property="og:site_name" content="Alxproject" />
+    <meta property="og:url" content="index-2.html">
+    <meta property="og:type" content="website">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Ayman Fikry" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="/static/tola/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/tola/css/line-awesome.min.css">
+    <link rel="stylesheet" href="/static/tola/css/flaticon.css">
+    <link rel="stylesheet" href="/static/tola/css/swiper-min.css">
+    <link rel="stylesheet" href="/static/tola/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="/static/tola/css/fancybox.min.css">
+    <link rel="stylesheet" href="/static/tola/css/aos.min.css">
+    <link rel="stylesheet" href="/static/tola/css/style.css">
+    <link rel="stylesheet" href="/static/tola/css/responsive.css">
+    <title>Misa - Creative Agency HTML Template</title>
+    <link rel="icon" type="image/png" href="/static/tola/img/logo.png">
+</head>
+
+<body>
+
+  
+    <div class="page-wrapper">
+
+        <header class="header-wrap style1">
+            <div class="header-top">
+                <div class="close-header-top xl-none">
+                    <button type="button"><i class="las la-times"></i></button>
+                </div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="header-top-right">
+                                <div class="navbar-option-item navbar-language dropdown language-option">
+                                    
+                                    
+                                </div>
+                                
+                                <a href="services-one.html" class="btn style1 xl-none">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="header-bottom-wrap">
+                        <div class="row align-items-center">
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-5">
+                                <a href="index.html" class="logo">
+                                    <h2 style="color: #3135ee;">Alxproject</h2>
+                                    <!-- <img style="height: 50px;" class="logo-light" src="/static/tola/img/logo.png" alt="Image"> -->
+                                </a>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-7">
+                                <div class="main-menu-wrap">
+                                    <div class="menu-close xl-none">
+                                        <a href="javascript:void(0)"><i class="las la-times"></i></a>
+                                    </div>
+                                    <div id="menu">
+                                        <ul class="main-menu list-style">
+                                            <li class="">
+                                                <a class="" href="#">Home</a>
+                                            </li>
+                                            
+                                            <li class="">
+                                                <a href="#service">Services</a>
+                                            </li>
+                                           
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="mobile-bar-wrap">
+                                   
+                                    
+                                    <div class="mobile-menu xl-none">
+                                        <a style="background-color: #3135ee;" href="javascript:void(0)"><i class="las la-bars"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 lg-none">
+                                <div class="header-bottom-right">
+                                    {% if user.is_authenticated %}
+                                    <a href="/profile" class="btn style12">Dashboard</a>
+                                    <a href="/logout" class="btn style12">Logout</a>
+                                    {% else %}
+                                    <a href="/signup" class="btn style12">Register</a>
+                                    <a href="/login" class="btn style12">Login</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </header>
+
+
+        <section class="hero-wrap style1 bg-selago">
+            
+            <div class="hero-content-wrap">
+                <div class="hero-content">
+                    <span style="color: white; font-weight: bold;" data-aos="fade-up" data-aos-duration="1000">JOIN US NOW! ON</span>
+                    <h1 style="color: #fff; text-transform: uppercase;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"> ALXPROJECT </h1>
+                    <p style="color: white;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">Affordable Data and Airtime Here !!!</p>
+                    <div class="hero-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
+                        {% if user.is_authenticated %}
+                        <a href="/profile" class="btn style1">Dashboard</a>
+                        <a href="/logout" class="btn style1">Logout</a>
+                        {% else %}
+                        <a href="/signup" class="btn style1">Register</a>
+                        <a href="/login" class="btn style1">Login</a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="hero-img-wrap">
+                    <img class="hero-img" src="/static/tola/img/ne.png" style="margin-bottom: 80px; height: 400px;" alt="Image">
+                    
+                   
+                </div>
+            </div>
+        </section>
+
+
+        <section id="service" class="service-wrap style1 pt-100 pb-75">
+            <img src="/static/tola/img/wave-shape-2.png" alt="Image" class="wave-shape-3">
+            <div class="container">
+                <div class="row mb-40 align-items-center">
+                    <div class="col-xl-6">
+                        <div class="section-title style1">
+                            <span>OUR SERVICES</span>
+                            <h2>Discover the spectrum of services we bring to you</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <p class="section-para">At our core, we provide top-notch services that go above and beyond</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-slider-wrap">
+                <div class="container">
+                    <div class="service-slider-one swiper-container pb-0">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="service-card style1">
+                                    <div class="service-img">
+                                        <img src="/static/tola/img/per.png" alt="Image">
+                                    </div>
+                                    <div class="service-info">
+                                            <img src="/static/tola/img/dta.png">
+                                        <h3 class="service-title">Buy Data
+                                        </h3>
+                                        <p>Start enjoying this very low rates Data plan for your internet browsing databundle.</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="service-card style1">
+                                    <div class="service-img">
+                                        <img src="/static/tola/img/per.png" alt="Image">
+                                    </div>
+                                    <div class="service-info">
+                                        <img src="/static/tola/img/telephone.png" alt="Image">
+                                        <h3 class="service-title">Airtime TopUp
+                                        </h3>
+                                        <p>Making an online recharge has become very easy and safe on Alxproject.</p>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                         
+                        </div>
+                    </div>
+                </div>
+                <div class="service-prev slider-btn style1"><i class="flaticon-left-arrow-1"></i></div>
+                <div class="service-next slider-btn style1"><i class="flaticon-next"></i></div>
+            </div>
+        </section>
+
+
+
+        <footer class="footer-wrap style1 bg-aztech">
+            <div class="footer-top pt-100 pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-widget-wrap">
+                            <div class="footer-widget">
+                                <a href="index.html" class="logo">
+                                    <h2 style="color: #3135ee;">Alxproject</h2>
+                                </a>
+                                <div class="newsletter-box">
+                                    <p>Experience our premium services at an even more affordable rate. Quality meets affordability with our cost-effective offerings.</p>
+                                    
+                                </div>
+                               
+                            </div>
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title">Services</h4>
+                                <ul class="footer-menu list-style">
+                                    <li><a href="#service"><i class="flaticon-next"></i>Buy Data</a>
+                                    </li>
+                                    <li><a href="#service"><i class="flaticon-next"></i>Buy Airtime</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title">Quick Links</h4>
+                                <ul class="footer-menu list-style">
+                                    
+                                    <li><a href="#service"><i class="flaticon-next"></i>Services</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="footer-widget">
+                                <h4 class="footer-widget-title">Get In Touch</h4>
+                                <div class="contact-item">
+                                    <i class="flaticon-pin"></i>
+                                    <h6>Location</h6>
+                                    <p>Nigeria</p>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="flaticon-email"></i>
+                                    <h6>Email</h6>
+                                    <a href="mailto:d@gmail.com">d@gmail.com </a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="flaticon-call-1"></i>
+                                    <h6>Phone</h6>
+                                    <a href="tel:080">080</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p><span class="las la-copyright"></span>
+                        <script data-cfasync="false"
+                            src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                        <script>document.write(new Date().getFullYear())</script> <a href="index.html">Alxproject</a>. All
+                        Rights Reserved <br>
+                        
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <a href="#" class="back-to-top">SCROLL TO TOP <i class="flaticon-next"></i></a>
+
+
+    <script src="/static/tola/js/jquery.min.js"></script>
+    <script src="/static/tola/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/tola/js/form-validator.min.js"></script>
+    <script src="/static/tola/js/contact-form-script.js"></script>
+    <script src="/static/tola/js/aos.min.js"></script>
+    <script src="/static/tola/js/swiper-min.js"></script>
+    <script src="/static/tola/js/magnific-popup.min.js"></script>
+    <script src="/static/tola/js/fancybox.min.js"></script>
+    <script src="/static/tola/js/progressbar.min.js"></script>
+    <script src="/static/tola/js/main.js"></script>
+</body>
+
+
+</html>
